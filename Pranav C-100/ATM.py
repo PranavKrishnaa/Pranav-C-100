@@ -29,17 +29,12 @@ def main():
     print("1.Balance Enquriy   2.Withdrawl")
     activity = int(input("Enter activity number :- "))
 
-    if (activity == 1):
-        new_user.check_balance()
-    elif (activity == 2):
-        print("1. Add Money")
-        choose = int(input("1. Add Money "))
-        if (choose == 1):
-           money = int(input("Enter the amount:- "))
-           new_user.withdrawl1(money)
-       
-    else:
-        print("Enter a valid number")
+    if (activity == 1): 
+        new_user.check_balance() 
+    elif (activity == 2): 
+        amount = int(input("enter the amount:- ")) 
+        new_user.withdrawl(amount) 
+    else: print("enter a valid number")
 
 if __name__ == "__main__":
     main()
